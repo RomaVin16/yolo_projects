@@ -63,7 +63,13 @@
 
 ## Графики
 
+|     BoxF1     |     BoxPR     |      BoxP     |      BoxR     |
+|---------------|---------------|---------------|---------------|
+| <img src="runs/test/test_run/BoxF1_curve.png" width="200"><br> | <img src="runs/test/test_run/BoxPR_curve.png" width="200"><br> | <img src="runs/test/test_run/BoxP_curve.png" width="200"><br> | <img src="runs/test/test_run/BoxR_curve.png" width="200"><br> |
 
+|     MaskF1    |     MaskPR    |      MaskP    |      MaskR    |
+|---------------|---------------|---------------|---------------|
+| <img src="runs/test/test_run/MaskF1_curve.png" width="200"><br> | <img src="runs/test/test_run/MaskPR_curve.png" width="200"><br> | <img src="runs/test/test_run/MaskP_curve.png" width="200"><br> | <img src="runs/test/test_run/MaskR_curve.png" width="200"><br> |
 
 ## Анализ матрицы ошибок
 
