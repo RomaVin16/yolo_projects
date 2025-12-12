@@ -2,9 +2,8 @@ from ultralytics import YOLO
 import cv2, numpy as np, os
 from pathlib import Path
 
-model = YOLO(r"runs/train/vertebrae_final/weights/best.pt")
+model = YOLO(r"runs/two_stage_fixed/stage2_fixed/weights/best.pt")
 
-# Папки
 input_dir = "test_images"
 output_dir = "test_results"
 
@@ -19,7 +18,7 @@ for filename in image_files:
         img_path = os.path.join(input_dir, filename)
         img_rgb = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB)
         
-        results = model(img_rgb, conf=0.261, iou=0.45, max_det=20)[0]
+        results = model(img_rgb, conf=0.15, iou=0.45, max_det=20)[0]
         
         if results.masks:
             # Фильтрация по классам
