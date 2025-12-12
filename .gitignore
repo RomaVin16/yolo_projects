@@ -1,38 +1,61 @@
 *.pt
 *.pth
-*.h5
-*.pkl
-*.bin
+*.weights
+*.onnx
+*.engine
+*.torchscript
 
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+*.so
 
 venv/
 env/
 .venv/
+venv*/
+env*/
+.venv*/
 
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+*.sublime-*
 
 *.tmp
 *.temp
+.cache/
+.nox/
 
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
 
-logs/
-datasets/
 *.log
+logs/
+wandb/
 
-!runs/train/vertebrae_final/args.yaml
-!runs/train/vertebrae_final/results.csv
-!runs\two_stage_fixed\stage2_fixed\results.csv
-
+datasets/
+data/
+images/train/
+images/val/
+labels/train/
+labels/val/
 
 paxray_yolo_seg/
 paxray_yolo_seg_augmented/
 yolo_env/
+
+!runs/
+
+runs/**/*.pt
+runs/**/*.pth
+runs/**/*.weights
