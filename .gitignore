@@ -30,6 +30,9 @@ datasets/
 
 !runs/train/vertebrae_final/args.yaml
 !runs/train/vertebrae_final/results.csv
+!runs\two_stage_fixed\stage2_fixed\results.csv
+
 
 paxray_yolo_seg/
+paxray_yolo_seg_augmented/
 yolo_env/
